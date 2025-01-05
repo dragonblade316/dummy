@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target controller[0m
+[100%] Built target controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib/dummy_controller/controller
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/ament_index/resource_index/package_run_dependencies/dummy_controller
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/ament_index/resource_index/parent_prefix_path/dummy_controller
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/environment/path.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/environment/path.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/local_setup.bash
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/local_setup.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/local_setup.zsh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/local_setup.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/ament_index/resource_index/packages/dummy_controller
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/cmake/dummy_controllerConfig.cmake
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/cmake/dummy_controllerConfig-version.cmake
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.xml

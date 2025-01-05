@@ -1,0 +1,10 @@
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/uninstall.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/dummy_joy_control_uninstall.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/controller.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/test.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/edit_cache.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/rebuild_cache.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/list_install_components.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/install.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/install/local.dir
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/CMakeFiles/install/strip.dir

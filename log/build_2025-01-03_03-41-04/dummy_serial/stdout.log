@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating dummy_serial.egg-info
+writing dummy_serial.egg-info/PKG-INFO
+writing dependency_links to dummy_serial.egg-info/dependency_links.txt
+writing entry points to dummy_serial.egg-info/entry_points.txt
+writing requirements to dummy_serial.egg-info/requires.txt
+writing top-level names to dummy_serial.egg-info/top_level.txt
+writing manifest file 'dummy_serial.egg-info/SOURCES.txt'
+reading manifest file 'dummy_serial.egg-info/SOURCES.txt'
+writing manifest file 'dummy_serial.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages/dummy-serial.egg-link (link to .)
+Installing serial script to /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/dummy_serial
+
+Installed /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial
+running symlink_data
+creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index
+creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index
+creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index/packages
+symbolically linking /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/resource/dummy_serial -> /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index/packages
+symbolically linking /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/package.xml -> /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial

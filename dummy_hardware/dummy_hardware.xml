@@ -1,0 +1,9 @@
+<library path="dummy_hardware">
+  <class name="dummy_hardware/DummyHardware"
+      type="hardware::DummyHardware"
+      base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware driver for Dummy robot
+    </description>
+  </class>
+</library>

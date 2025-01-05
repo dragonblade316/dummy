@@ -1,0 +1,14 @@
+{
+    "documentId": "de96be5996e3df72858806fa",
+    "outputFormat": "urdf",
+
+    "robotName": "dummy",
+
+    "assemblyName": "A1",
+
+    "addDummyBaseLink": true,
+
+    "packageName": "dummy_description/model"
+
+    
+}

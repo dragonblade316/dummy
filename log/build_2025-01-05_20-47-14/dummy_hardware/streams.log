@@ -1,0 +1,9 @@
+[0.015s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.034s] [31mCMake Error at CMakeLists.txt:10 (ament_export_include_directories):
+[0.034s]   Unknown CMake command "ament_export_include_directories".
+[0.034s] 
+[0.034s] [0m
+[0.034s] -- Configuring incomplete, errors occurred!
+[0.034s] See also "/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware/CMakeFiles/CMakeOutput.log".
+[0.035s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.195s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

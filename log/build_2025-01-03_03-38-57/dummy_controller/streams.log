@@ -1,0 +1,48 @@
+[0.017s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install/moveit_configs_utils:/home/dragonblade316/Programming/robotics/dummy/install/launch_param_builder:/home/dragonblade316/Programming/robotics/dummy/install/dummy_serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_configs_utils:/home/dragonblade316/Programming/robotics/dummy/install_clang/launch_param_builder:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake /home/dragonblade316/Programming/robotics/dummy/dummy_controller -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller
+[0.087s] -- The C compiler identification is Clang 14.0.0
+[0.163s] -- The CXX compiler identification is Clang 14.0.0
+[0.168s] -- Detecting C compiler ABI info
+[0.251s] -- Detecting C compiler ABI info - done
+[0.253s] -- Check for working C compiler: /usr/bin/clang - skipped
+[0.253s] -- Detecting C compile features
+[0.253s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.343s] -- Detecting CXX compiler ABI info - done
+[0.346s] -- Check for working CXX compiler: /usr/bin/clang++ - skipped
+[0.346s] -- Detecting CXX compile features
+[0.346s] -- Detecting CXX compile features - done
+[0.348s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.463s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.519s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.546s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.602s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.610s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.617s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.629s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.644s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.681s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.685s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.787s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.814s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.854s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.861s] -- Looking for pthread.h
+[0.948s] -- Looking for pthread.h - found
+[0.948s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.027s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.028s] -- Found Threads: TRUE  
+[1.061s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.068s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.078s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.092s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[1.101s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.172s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.221s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.221s] -- Configured cppcheck include dirs: 
+[1.221s] -- Configured cppcheck exclude dirs and/or files: 
+[1.222s] -- Added test 'lint_cmake' to check CMake code style
+[1.223s] -- Added test 'uncrustify' to check C / C++ code style
+[1.223s] -- Configured uncrustify additional arguments: 
+[1.224s] -- Added test 'xmllint' to check XML markup files
+[1.226s] -- Configuring done
+[1.232s] -- Generating done
+[1.235s] -- Build files have been written to: /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller

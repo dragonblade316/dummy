@@ -1,0 +1,1 @@
+/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware/ament_cmake_core/dummy_hardwareConfig-version.cmake

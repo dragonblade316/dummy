@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/dragonblade316/Programming/robotics/dummy/build_clang/serial",
+  "command": "/usr/bin/clang++  -I/home/dragonblade316/Programming/robotics/dummy/serial-ros2/include  -o CMakeFiles/serial.dir/src/serial.cc.o -c /home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/serial.cc",
+  "file": "/home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/serial.cc"
+},
+{
+  "directory": "/home/dragonblade316/Programming/robotics/dummy/build_clang/serial",
+  "command": "/usr/bin/clang++  -I/home/dragonblade316/Programming/robotics/dummy/serial-ros2/include  -o CMakeFiles/serial.dir/src/impl/unix.cc.o -c /home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/impl/unix.cc",
+  "file": "/home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/impl/unix.cc"
+},
+{
+  "directory": "/home/dragonblade316/Programming/robotics/dummy/build_clang/serial",
+  "command": "/usr/bin/clang++  -I/home/dragonblade316/Programming/robotics/dummy/serial-ros2/include  -o CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o -c /home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/impl/list_ports/list_ports_linux.cc",
+  "file": "/home/dragonblade316/Programming/robotics/dummy/serial-ros2/src/impl/list_ports/list_ports_linux.cc"
+}
+]

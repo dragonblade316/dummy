@@ -1,0 +1,21 @@
+[0.016s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion -- -j20 -l20
+[0.179s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion -- -j20 -l20
+[0.179s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion
+[0.183s] -- Install configuration: ""
+[0.183s] -- Execute custom install script
+[0.184s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/ament_index/resource_index/package_run_dependencies/dummy_motion
+[0.185s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/ament_index/resource_index/parent_prefix_path/dummy_motion
+[0.185s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/environment/ament_prefix_path.sh
+[0.185s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/environment/ament_prefix_path.dsv
+[0.185s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/environment/path.sh
+[0.186s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/environment/path.dsv
+[0.186s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/local_setup.bash
+[0.186s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/local_setup.sh
+[0.186s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/local_setup.zsh
+[0.186s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/local_setup.dsv
+[0.186s] -- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.dsv
+[0.190s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/ament_index/resource_index/packages/dummy_motion
+[0.190s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/cmake/dummy_motionConfig.cmake
+[0.190s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/cmake/dummy_motionConfig-version.cmake
+[0.190s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.xml
+[0.190s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion

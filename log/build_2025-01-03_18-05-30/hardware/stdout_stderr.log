@@ -1,0 +1,56 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/hardware.dir/src/robot.cpp.o[0m
+[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:28:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value in all control paths [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:59:59: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:59:90: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:63:67: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type Dummy::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                  ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:63:98: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type Dummy::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                 ^
+[0mIn file included from /home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:1:
+In file included from /home/dragonblade316/Programming/robotics/dummy/hardware/./include/hardware/robot.hpp:1:
+In file included from /opt/ros/humble/include/hardware_interface/handle.hpp:18:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string:41:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/allocator.h:46:
+In file included from /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33:
+[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/new_allocator.h:162:23: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'rclcpp::Logger'[0m
+        { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+[0;1;32m                             ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/alloc_traits.h:516:8: [0m[0;1;30mnote: [0min instantiation of function template specialization '__gnu_cxx::new_allocator<rclcpp::Logger>::construct<rclcpp::Logger, const char (&)[68]>' requested here[0m
+          __a.construct(__p, std::forward<_Args>(__args)...);
+[0;1;32m              ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:519:30: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::allocator_traits<std::allocator<rclcpp::Logger>>::construct<rclcpp::Logger, const char (&)[68]>' requested here[0m
+          allocator_traits<_Alloc>::construct(__a, _M_ptr(),
+[0;1;32m                                    ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:651:6: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::_Sp_counted_ptr_inplace<rclcpp::Logger, std::allocator<rclcpp::Logger>, __gnu_cxx::_S_atomic>::_Sp_counted_ptr_inplace<const char (&)[68]>' requested here[0m
+            _Sp_cp_type(__a._M_a, std::forward<_Args>(__args)...);
+[0;1;32m            ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:1342:14: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__shared_count<__gnu_cxx::_S_atomic>::__shared_count<rclcpp::Logger, std::allocator<rclcpp::Logger>, const char (&)[68]>' requested here[0m
+        : _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+[0;1;32m                    ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:409:4: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__shared_ptr<rclcpp::Logger, __gnu_cxx::_S_atomic>::__shared_ptr<std::allocator<rclcpp::Logger>, const char (&)[68]>' requested here[0m
+        : __shared_ptr<_Tp>(__tag, std::forward<_Args>(__args)...)
+[0;1;32m          ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:862:14: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::shared_ptr<rclcpp::Logger>::shared_ptr<std::allocator<rclcpp::Logger>, const char (&)[68]>' requested here[0m
+      return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+[0;1;32m             ^
+[0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:878:19: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::allocate_shared<rclcpp::Logger, std::allocator<rclcpp::Logger>, const char (&)[68]>' requested here[0m
+      return std::allocate_shared<_Tp>(std::allocator<_Tp_nc>(),
+[0;1;32m                  ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/hardware/src/robot.cpp:25:17: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::make_shared<rclcpp::Logger, const char (&)[68]>' requested here[0m
+        logger_ = std::make_shared<rclcpp::Logger>("controller_manager.resource_manager.hardware_component.system.Dummy");
+[0;1;32m                       ^
+[0m[1m/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:121:12: [0m[0;1;30mnote: [0mdeclared private here[0m
+  explicit Logger(const std::string & name)
+[0;1;32m           ^
+[0m5 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/hardware.dir/build.make:76: CMakeFiles/hardware.dir/src/robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

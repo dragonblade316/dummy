@@ -1,0 +1,16 @@
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:28:1: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value in all control paths [-Wreturn-type][0m
+}
+[0;1;32m^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:59:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:59:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                        ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:63:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:63:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                         ^
+[0m5 warnings generated.

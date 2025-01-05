@@ -1,0 +1,4 @@
+[0.016s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control -- -j20 -l20
+[0.154s] [100%] Built target controller
+[0.176s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control' returned '0': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control -- -j20 -l20
+[0.177s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control': /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control

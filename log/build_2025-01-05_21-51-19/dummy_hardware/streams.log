@@ -1,0 +1,33 @@
+[0.017s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.177s] [ 50%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.101s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:42:2: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'serial_port'[0m
+[1.101s]         serial_port.Open("/dev/ttyACM1");
+[1.101s] [0;1;32m        ^
+[1.109s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:43:2: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'serial_port'[0m
+[1.109s]         serial_port.SetBaudRate(BaudRate::BAUD_115200);
+[1.109s] [0;1;32m        ^
+[1.118s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:43:26: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'BaudRate'; did you mean 'LibSerial::BaudRate'?[0m
+[1.118s]         serial_port.SetBaudRate(BaudRate::BAUD_115200);
+[1.118s] [0;1;32m                                ^~~~~~~~
+[1.118s] [0m[0;32m                                LibSerial::BaudRate
+[1.118s] [0m[1m/usr/include/libserial/SerialPortConstants.h:189:16: [0m[0;1;30mnote: [0m'LibSerial::BaudRate' declared here[0m
+[1.118s]     enum class BaudRate : speed_t
+[1.118s] [0;1;32m               ^
+[1.120s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:66:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.120s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.120s] [0;1;32m                                                                         ^
+[1.120s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:66:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.120s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.120s] [0;1;32m                                                                                                        ^
+[1.120s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:70:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.120s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.120s] [0;1;32m                                                                          ^
+[1.121s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:70:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.121s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.121s] [0;1;32m                                                                                                         ^
+[1.299s] [0m4 warnings and 3 errors generated.
+[1.306s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.306s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.306s] gmake: *** [Makefile:146: all] Error 2
+[1.308s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

@@ -1,0 +1,1 @@
+/home/dragonblade316/Programming/robotics/dummy/moveit_config/build_clang/moveit_config/ament_cmake_core/moveit_configConfig-version.cmake

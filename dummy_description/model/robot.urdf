@@ -1,0 +1,320 @@
+<robot name="dummy">
+<link name="base_link"></link>
+<joint name="base_link_to_base" type="fixed">
+<parent link="base_link"/>
+<child link="base" />
+<origin rpy="0.0 0 0" xyz="0 0 0"/>
+</joint>
+<link name="base">
+<visual>
+<origin xyz="-0.047828882379369525024 -0.065342802966927890362 0.006802502096687798594" rpy="1.0189195870939437146e-07 1.7026717884374556317e-06 6.1825039504151239402e-08" />
+<geometry>
+<mesh filename="package://dummy_description/model/base.stl"/>
+</geometry>
+<material name="base_material">
+<color rgba="0.98039215686274505668 0.71372549019607844922 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.047828882379369525024 -0.065342802966927890362 0.006802502096687798594" rpy="1.0189195870939437146e-07 1.7026717884374556317e-06 6.1825039504151239402e-08" />
+<geometry>
+<mesh filename="package://dummy_description/model/base.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.032468365597820368629 -0.061241024288252947361 0.013179638877296331531" rpy="0 0 0"/>
+<mass value="0.095300979777088387634" />
+<inertia ixx="0.00011801893972051629388" ixy="-2.1494999035289338651e-12"  ixz="1.7779428765101765104e-10" iyy="0.00011807354565986507655" iyz="-1.2604448510708288921e-06" izz="0.00022239393538468245348" />
+</inertial>
+</link>
+
+<link name="mg996r_v2">
+<visual>
+<origin xyz="-0.01450000000000000594 0.004999999999999997502 0" rpy="3.141592653589793116 -5.6000000414897895305e-16 2.1175823681357513179e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+<material name="mg996r_v2_material">
+<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.01450000000000000594 0.004999999999999997502 0" rpy="3.141592653589793116 -5.6000000414897895305e-16 2.1175823681357513179e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.024255671585750017416 0.0049999989393006566418 0.0088504927765015398849" rpy="0 0 0"/>
+<mass value="0.055791861264000007503" />
+<inertia ixx="8.6044198419255101489e-06" ixy="-5.0486636963735292566e-12"  ixz="3.4441859625622038471e-08" iyy="1.4679957311313164065e-05" iyz="-1.0614227360729792485e-12" izz="9.7426395371235840814e-06" />
+</inertial>
+</link>
+
+<link name="arm_round">
+<visual>
+<origin xyz="5.5511151231257827021e-17 -7.5633943552588789316e-16 -0.00060000000000000330846" rpy="7.7306692010095163408e-16 5.739070370565970942e-24 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+<material name="arm_round_material">
+<color rgba="0.098039215686274508443 0.098039215686274508443 0.098039215686274508443 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="5.5511151231257827021e-17 -7.5633943552588789316e-16 -0.00060000000000000330846" rpy="7.7306692010095163408e-16 5.739070370565970942e-24 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="5.4582290894936453343e-17 -7.5451188276967157162e-16 0.0003179644200924597406" rpy="0 0 0"/>
+<mass value="0.00045359236800000010507" />
+<inertia ixx="1.2159854622929928994e-08" ixy="2.5749493748610378174e-30"  ixz="-1.7020787509523014611e-31" iyy="1.2159854622929909142e-08" iyz="-8.4021125543109597233e-24" izz="2.3028399552020607303e-08" />
+</inertial>
+</link>
+
+<link name="seg_one">
+<visual>
+<origin xyz="0.053705249205231675447 -0.0037678245534087523305 0" rpy="1.570796326794896558 -3.0669649817544585376e-24 -2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/seg_one.stl"/>
+</geometry>
+<material name="seg_one_material">
+<color rgba="0.97254901960784312376 0.52941176470588235947 0.0039215686274509803377 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.053705249205231675447 -0.0037678245534087523305 0" rpy="1.570796326794896558 -3.0669649817544585376e-24 -2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/seg_one.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0.072753258141030258122 0.0037025801574412662079 -0.006356985632083716857" rpy="0 0 0"/>
+<mass value="0.038138749034982870334" />
+<inertia ixx="9.9918489081650458024e-06" ixy="7.7426322161545294806e-06"  ixz="-3.1224600402499617079e-07" iyy="0.00011258033201329481" iyz="2.5293281233327603064e-07" izz="0.00012148131830536844323" />
+</inertial>
+</link>
+
+<link name="mg996r_v2_2">
+<visual>
+<origin xyz="-0.014500000000000012879 -0.0050000000000000183187 0" rpy="-3.141592653589793116 -5.6000000414897895305e-16 -2.1175823681357513179e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+<material name="mg996r_v2_material">
+<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.014500000000000012879 -0.0050000000000000183187 0" rpy="-3.141592653589793116 -5.6000000414897895305e-16 -2.1175823681357513179e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.024255671585750024355 -0.0050000010606993591789 0.0088504927765015398849" rpy="0 0 0"/>
+<mass value="0.055791861264000007503" />
+<inertia ixx="8.6044198419255101489e-06" ixy="-5.0486636963735389501e-12"  ixz="3.4441859625622038471e-08" iyy="1.4679957311313164065e-05" iyz="-1.0614227360729790466e-12" izz="9.7426395371235840814e-06" />
+</inertial>
+</link>
+
+<link name="arm_round_2">
+<visual>
+<origin xyz="6.9388939039072283776e-17 -7.6327832942979512154e-16 -0.00059999999999999636957" rpy="7.7306690686606183323e-16 4.2330907262883670288e-24 -2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+<material name="arm_round_material">
+<color rgba="0.098039215686274508443 0.098039215686274508443 0.098039215686274508443 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="6.9388939039072283776e-17 -7.6327832942979512154e-16 -0.00059999999999999636957" rpy="7.7306690686606183323e-16 4.2330907262883670288e-24 -2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="6.8460078689721750587e-17 -7.6145077663713135542e-16 0.00031796442009246667949" rpy="0 0 0"/>
+<mass value="0.00045359236800000010507" />
+<inertia ixx="1.2159854622929928994e-08" ixy="-2.5749493748610413206e-30"  ixz="-4.7874986447740384758e-31" iyy="1.215985462292991245e-08" iyz="-8.4021118009103021466e-24" izz="2.3028399552020607303e-08" />
+</inertial>
+</link>
+
+<link name="seg_two">
+<visual>
+<origin xyz="-0.077810930135565364862 0.0039761346122249852097 0" rpy="1.570796326794896558 5.6592755122810551558e-24 2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/seg_two.stl"/>
+</geometry>
+<material name="seg_two_material">
+<color rgba="0 0 1 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.077810930135565364862 0.0039761346122249852097 0" rpy="1.570796326794896558 5.6592755122810551558e-24 2.1175823681357508477e-22" />
+<geometry>
+<mesh filename="package://dummy_description/model/seg_two.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.054668888422984771025 -0.0072500000000000099087 -0.006368033000097163103" rpy="0 0 0"/>
+<mass value="0.030280862737785154554" />
+<inertia ixx="3.9672174108226673558e-06" ixy="8.4009096397192458938e-28"  ixz="3.8872108409597853819e-07" iyy="7.5080652377266187368e-05" iyz="1.0759990517693536136e-27" izz="7.8182858488606501871e-05" />
+</inertial>
+</link>
+
+<link name="mg996r_v2_3">
+<visual>
+<origin xyz="0.034500000000000002887 -0.0049999999999999905631 6.9388939039072283776e-18" rpy="3.141592653589793116 -5.6000000031574594379e-16 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+<material name="mg996r_v2_material">
+<color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.034500000000000002887 -0.0049999999999999905631 6.9388939039072283776e-18" rpy="3.141592653589793116 -5.6000000031574594379e-16 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/mg996r_v2.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="0.02474432841424999141 -0.0050000010606993314233 0.0088504927765015468238" rpy="0 0 0"/>
+<mass value="0.055791861264000007503" />
+<inertia ixx="8.604419841925513537e-06" ixy="-5.0486636963735341033e-12"  ixz="3.4441859625622045088e-08" iyy="1.4679957311313160677e-05" iyz="-1.0614227360729790466e-12" izz="9.7426395371235840814e-06" />
+</inertial>
+</link>
+
+<link name="arm_round_3">
+<visual>
+<origin xyz="5.5511151231257827021e-17 -7.7021722333370234992e-16 -0.00060000000000000330846" rpy="7.7306691041560774059e-16 -1.3234889800848442798e-23 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+<material name="arm_round_material">
+<color rgba="0.098039215686274508443 0.098039215686274508443 0.098039215686274508443 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="5.5511151231257827021e-17 -7.7021722333370234992e-16 -0.00060000000000000330846" rpy="7.7306691041560774059e-16 -1.3234889800848442798e-23 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/arm_round.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="5.4582290886790330509e-17 -7.6838967056618914579e-16 0.0003179644200924597406" rpy="0 0 0"/>
+<mass value="0.00045359236800000010507" />
+<inertia ixx="1.2159854622929928994e-08" ixy="-7.7248481245831148535e-30"  ixz="-1.4384399443209125771e-31" iyy="1.215985462292991245e-08" iyz="-8.4021123886847358024e-24" izz="2.3028399552020607303e-08" />
+</inertial>
+</link>
+
+<link name="wrist">
+<visual>
+<origin xyz="-0.0095673749088002468799 0.0042428395003080328352 0" rpy="1.570796326794896558 1.3234889800848442798e-23 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/wrist.stl"/>
+</geometry>
+<material name="wrist_material">
+<color rgba="1 0 0 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.0095673749088002468799 0.0042428395003080328352 0" rpy="1.570796326794896558 1.3234889800848442798e-23 0" />
+<geometry>
+<mesh filename="package://dummy_description/model/wrist.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.020814578421039824779 0.0072504885487388055082 0.003298034778637689516" rpy="0 0 0"/>
+<mass value="0.016076987416131532926" />
+<inertia ixx="3.8911048182727829464e-06" ixy="-1.6348585669320251243e-10"  ixz="1.8249846373231894045e-06" iyy="7.0776930926812439793e-06" iyz="3.3758449662823616254e-11" izz="5.70469681037147801e-06" />
+</inertial>
+</link>
+
+<joint name="wrist_mount" type="fixed">
+<origin xyz="4.1633363423443370266e-17 0.0071999999999992347899 0.0018999999999999850342" rpy="3.141592653589793116 1.9249019073327577723e-15 -7.4941282359972137417e-16" />
+<parent link="arm_round_3" />
+<child link="wrist" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="wrist" type="revolute">
+<origin xyz="0.034538107933987892417 -0.0050000032706329633481 -0.015499999999999986011" rpy="-3.1415926535897922278 -6.1232673501503056481e-17 -1.5707963267948907848" />
+<parent link="mg996r_v2_3" />
+<child link="arm_round_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" lower="-0" upper="3.141592653589793116"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="wrist_servo" type="fixed">
+<origin xyz="-0.099000000000000004663 -0.0022500000000000019984 6.9388939039072283776e-18" rpy="-3.1415926535897926719 6.3475081490357335169e-16 3.141592653589793116" />
+<parent link="seg_two" />
+<child link="mg996r_v2_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="forearm_mount" type="fixed">
+<origin xyz="6.9388939039072283776e-17 -0.0072000000000007752243 0.0018999999999999919731" rpy="-3.1415926535897926719 2.3408220465313534229e-16 -1.0587911840678691044e-20" />
+<parent link="arm_round_2" />
+<child link="seg_two" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="elbow" type="revolute">
+<origin xyz="-0.014461892066012130287 -0.0050000032706329772259 -0.015500000000000027645" rpy="-3.141592653589793116 1.1221675757108101127e-15 -1.5707963267949012209" />
+<parent link="mg996r_v2_2" />
+<child link="arm_round_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" lower="-0" upper="3.141592653589793116"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="elbow_servo" type="fixed">
+<origin xyz="0.125 -0.041750000000000023204 0" rpy="3.141592653589793116 -0 -1.570796326794896558" />
+<parent link="seg_one" />
+<child link="mg996r_v2_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="shoulder_horn" type="fixed">
+<origin xyz="5.5511151231257827021e-17 0.0071999999999992347899 0.0019000000000000127898" rpy="-3.1415926535897922278 -1.0323879464612367862e-23 -2.7724023638343179296e-17" />
+<parent link="arm_round" />
+<child link="seg_one" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="shoulder" type="revolute">
+<origin xyz="-0.01446189206601210947 0.0049999967293670455337 -0.015499999999999999889" rpy="3.141592653589793116 2.8943195551387177825e-16 1.570796326794891673" />
+<parent link="mg996r_v2" />
+<child link="arm_round" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" lower="-0" upper="3.141592653589793116"/>
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="shoulder_servo" type="fixed">
+<origin xyz="-0.03746826625245763126 -0.053637351761170709574 0.071802485648743613611" rpy="-1.5110252122491361071 -1.5707946210771026596 -0.059771052749696053363" />
+<parent link="base" />
+<child link="mg996r_v2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>

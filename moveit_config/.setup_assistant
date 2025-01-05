@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: dummy_description
+    relative_path: model/robot.urdf
+  srdf:
+    relative_path: config/dummy.srdf
+  package_settings:
+    author_name: dragonblade316
+    author_email: dragonblade316@yahoo.com
+    generated_timestamp: 1735771276
+  control_xacro:
+    command:
+      - position
+    state:
+      []
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      []

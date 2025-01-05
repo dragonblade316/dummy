@@ -1,0 +1,24 @@
+[0.434s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial': PYTHONPATH=/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/build --no-deps symlink_data
+[0.566s] running develop
+[0.643s] running egg_info
+[0.643s] creating dummy_serial.egg-info
+[0.643s] writing dummy_serial.egg-info/PKG-INFO
+[0.643s] writing dependency_links to dummy_serial.egg-info/dependency_links.txt
+[0.643s] writing entry points to dummy_serial.egg-info/entry_points.txt
+[0.643s] writing requirements to dummy_serial.egg-info/requires.txt
+[0.643s] writing top-level names to dummy_serial.egg-info/top_level.txt
+[0.643s] writing manifest file 'dummy_serial.egg-info/SOURCES.txt'
+[0.644s] reading manifest file 'dummy_serial.egg-info/SOURCES.txt'
+[0.644s] writing manifest file 'dummy_serial.egg-info/SOURCES.txt'
+[0.645s] running build_ext
+[0.645s] Creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages/dummy-serial.egg-link (link to .)
+[0.645s] Installing serial script to /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/dummy_serial
+[0.645s] 
+[0.645s] Installed /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial
+[0.645s] running symlink_data
+[0.645s] creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index
+[0.645s] creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index
+[0.646s] creating /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index/packages
+[0.646s] symbolically linking /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/resource/dummy_serial -> /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/ament_index/resource_index/packages
+[0.646s] symbolically linking /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/package.xml -> /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial
+[0.661s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial' returned '0': PYTHONPATH=/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/build --no-deps symlink_data
