@@ -1,2 +1,0 @@
-Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/hardware': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/hardware -- -j20 -l20
-Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/hardware' returned '2': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/hardware -- -j20 -l20

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp" "CMakeFiles/dummy_hardware.dir/src/robot.cpp.o" "gcc" "CMakeFiles/dummy_hardware.dir/src/robot.cpp.o.d"
+  "/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/serial.cpp" "CMakeFiles/dummy_hardware.dir/src/serial.cpp.o" "gcc" "CMakeFiles/dummy_hardware.dir/src/serial.cpp.o.d"
   )
 
 # Targets to which this target links.

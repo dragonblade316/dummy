@@ -379,9 +379,17 @@ CMakeFiles/dummy_hardware.dir/src/robot.cpp.o: \
   /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp \
   /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp \
-  /usr/include/libserial/SerialStream.h \
-  /usr/include/libserial/SerialPortConstants.h /usr/include/termios.h \
-  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/serial.h \
+  /usr/include/x86_64-linux-gnu/sys/shm.h \
+  /usr/include/x86_64-linux-gnu/sys/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc-perm.h \
+  /usr/include/x86_64-linux-gnu/bits/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
+  /usr/include/termios.h /usr/include/x86_64-linux-gnu/bits/termios.h \
   /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
   /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
   /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
@@ -392,7 +400,27 @@ CMakeFiles/dummy_hardware.dir/src/robot.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
   /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
   /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
-  /usr/include/libserial/SerialStreamBuf.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
+  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
   /opt/ros/humble/include/hardware_interface/types/hardware_interface_type_values.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp \
   /opt/ros/humble/include/rcutils/rcutils/logging_macros.h \
@@ -433,14 +461,7 @@ CMakeFiles/dummy_hardware.dir/src/robot.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
@@ -457,7 +478,6 @@ CMakeFiles/dummy_hardware.dir/src/robot.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_list.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/list.tcc \

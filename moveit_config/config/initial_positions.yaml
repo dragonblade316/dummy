@@ -1,6 +1,6 @@
 # Default initial positions for dummy's ros2_control fake system
 
 initial_positions:
-  elbow: 0
-  shoulder: 0
-  wrist: 0
+  elbow: 0.0
+  shoulder: 0.0
+  wrist: 0.0

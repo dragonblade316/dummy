@@ -234,6 +234,30 @@ src/robot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_hardware.dir/build.make CMakeFiles/dummy_hardware.dir/src/robot.cpp.s
 .PHONY : src/robot.cpp.s
 
+src/serial.o: src/serial.cpp.o
+.PHONY : src/serial.o
+
+# target to build an object file
+src/serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_hardware.dir/build.make CMakeFiles/dummy_hardware.dir/src/serial.cpp.o
+.PHONY : src/serial.cpp.o
+
+src/serial.i: src/serial.cpp.i
+.PHONY : src/serial.i
+
+# target to preprocess a source file
+src/serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_hardware.dir/build.make CMakeFiles/dummy_hardware.dir/src/serial.cpp.i
+.PHONY : src/serial.cpp.i
+
+src/serial.s: src/serial.cpp.s
+.PHONY : src/serial.s
+
+# target to generate assembly for a file
+src/serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dummy_hardware.dir/build.make CMakeFiles/dummy_hardware.dir/src/serial.cpp.s
+.PHONY : src/serial.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/robot.o"
 	@echo "... src/robot.i"
 	@echo "... src/robot.s"
+	@echo "... src/serial.o"
+	@echo "... src/serial.i"
+	@echo "... src/serial.s"
 .PHONY : help
 
 

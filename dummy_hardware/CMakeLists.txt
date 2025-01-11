@@ -19,6 +19,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(hardware_interface REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(serial REQUIRED)
 
 # find_package(PkgConfig)
 # pkg_check_modules(SERIAL libserial)
@@ -28,14 +29,16 @@ add_library(
   dummy_hardware
   SHARED
   ./src/robot.cpp
+  ./src/serial.cpp
   ./include/hardware/robot.hpp
+  ./include/hardware/serial.h
 )
 
 install(TARGETS
   dummy_hardware
   DESTINATION lib/${PROJECT_NAME})
 
-ament_target_dependencies(dummy_hardware rclcpp rclcpp_lifecycle hardware_interface pluginlib)
+ament_target_dependencies(dummy_hardware rclcpp rclcpp_lifecycle hardware_interface pluginlib serial)
 
 pluginlib_export_plugin_description_file(hardware_interface dummy_hardware.xml)
 

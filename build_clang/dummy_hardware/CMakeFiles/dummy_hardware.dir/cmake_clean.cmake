@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dummy_hardware.dir/src/robot.cpp.o"
   "CMakeFiles/dummy_hardware.dir/src/robot.cpp.o.d"
+  "CMakeFiles/dummy_hardware.dir/src/serial.cpp.o"
+  "CMakeFiles/dummy_hardware.dir/src/serial.cpp.o.d"
   "libdummy_hardware.pdb"
   "libdummy_hardware.so"
 )

@@ -4,6 +4,7 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
+from controller_manager.launch_utils import generate_controllers_spawner_launch_description
 from launch import LaunchDescription
 import os
 
@@ -69,12 +70,32 @@ def generate_launch_description():
         ],
     )
 
+    # arm_ctrl = generate_controllers_spawner_launch_description(
+    #     ["joint_trajectory_controller"],
+    #     controller_params_files=[ros2_controllers_path],
+    # )
+    #
+    #
     # arm_controller_spawner = Node(
     #     package="controller_manager",
     #     executable="spawner",
     #     arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
-    # )
+    #     parameters=[{"type": "position_controllers/JointTrajectoryController"}],
     #
+    # )
+
+    arm_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["main_controller", "-c", "/controller_manager"],
+        parameters=[{"type": "position_controllers/JointTrajectoryController"}],
+
+    )
+
+ 
+
+    
+
     return LaunchDescription(
         [
             # rviz_config_arg,
@@ -84,8 +105,9 @@ def generate_launch_description():
             # run_move_group_node,
             ros2_control_node,
             joint_state_broadcaster_spawner,
-            # arm_controller_spawner,
+            arm_controller_spawner,
             # hand_controller_spawner,
+            # arm_ctrl
         ]
     )
 

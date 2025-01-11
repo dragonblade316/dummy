@@ -1,9 +1,0 @@
-[0.014s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
-[0.153s] -- Configuring incomplete, errors occurred!
-[0.154s] See also "/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware/CMakeFiles/CMakeOutput.log".
-[0.154s] [31mCMake Error at CMakeLists.txt:10 (ament_export_include_directories):
-[0.154s]   Unknown CMake command "ament_export_include_directories".
-[0.154s] 
-[0.154s] [0m
-[0.154s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
-[0.163s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

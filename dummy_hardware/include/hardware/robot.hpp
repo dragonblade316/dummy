@@ -15,8 +15,7 @@
 #include "rclcpp_lifecycle/state.hpp"
 #include <memory>
 #include <vector>
-#include <libserial/SerialStream.h>
-
+#include "serial.h"
 
 namespace hardware {
 class DummyHardware : public hardware_interface::SystemInterface {
@@ -35,10 +34,14 @@ public:
   std::shared_ptr<rclcpp::Logger> logger_;
   rclcpp::Logger get_logger() const { return *logger_; }
 
+  int thing() {
+    serialib ser;
+    ser.isDeviceOpen();
+  }
+
 private:
-  std::vector<double> joints;
-  /*LibSerial::SerialStream serial_port;*/
-	
+  std::vector<double> joints = {0,0,0};	
+  serialib serial;
 };
 
 }

@@ -1,5 +1,0 @@
-[0.151s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/hardware -- -j20 -l20
-[0.183s] [0mCMake Error: The source directory "/home/dragonblade316/Programming/robotics/dummy/hardware" does not exist.
-[0.184s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.184s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
-[0.184s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/hardware -- -j20 -l20
