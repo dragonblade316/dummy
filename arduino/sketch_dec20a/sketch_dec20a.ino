@@ -66,7 +66,7 @@ void recvWithStartEndMarkers() {
                 recvInProgress = false;
                 ndx = 0;
                 newData = true;
-                Serial.println("message ended");
+                //Serial.println("message ended");
             }
         }
 
@@ -79,7 +79,7 @@ void recvWithStartEndMarkers() {
 void showNewData() {
     if (newData == true) {
         //Serial.print("This just in ... ");
-        Serial.println(receivedChars);
+        //Serial.println(receivedChars);
         newData = false;
 
         char* things = strtok(receivedChars, ',');
