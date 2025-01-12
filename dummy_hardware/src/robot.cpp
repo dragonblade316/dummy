@@ -2,6 +2,7 @@
 #include "hardware_interface/handle.hpp"
 #include "hardware_interface/system_interface.hpp"
 #include "hardware_interface/types/hardware_interface_return_values.hpp"
+#include <chrono>
 #include <cstdio>
 #include <hardware_interface/types/hardware_interface_type_values.hpp>
 #include <memory>
@@ -21,7 +22,6 @@
 #define BAUD 9600
 
 
-
 PLUGINLIB_EXPORT_CLASS(
     hardware::DummyHardware,
     hardware_interface::SystemInterface
@@ -38,8 +38,8 @@ hardware_interface::CallbackReturn DummyHardware::on_init(const hardware_interfa
 	logger_ = std::make_shared<rclcpp::Logger>(rclcpp::get_logger("controller_manager.resource_manager.hardware_component.system.Dummy"));
 	
 	return hardware_interface::CallbackReturn::SUCCESS;
-	
 }
+
 hardware_interface::CallbackReturn DummyHardware::on_configure(
 	const rclcpp_lifecycle::State & /*previous_state*/) {
 	// setup communication with robot hardware
@@ -52,16 +52,12 @@ hardware_interface::CallbackReturn DummyHardware::on_configure(
 	char zeros[] = "<0,0,0>";
 
 	// Connection to serial port
-	char error = serial.openDevice(SERIAL_PORT, 9600);
+	char error = serial.openDevice(SERIAL_PORT, 115200);
 
 	if (error!=1) {
 		RCLCPP_ERROR(get_logger(), "Failed to open serial port");
 		return hardware_interface::CallbackReturn::ERROR;
 	}
-	//I apologize for nothing
-	joints.push_back(0.0);
-	joints.push_back(0.0);
-	joints.push_back(0.0);
 	
 	serial.writeString(zeros);
 	RCLCPP_INFO(get_logger(), "hardware ready");
@@ -73,8 +69,8 @@ hardware_interface::CallbackReturn DummyHardware::on_configure(
 std::vector<hardware_interface::StateInterface> DummyHardware::export_state_interfaces() {
 	std::vector<hardware_interface::StateInterface> interfaces;
 
-	if (info_.joints.size() > joints.size()) {
-		RCLCPP_ERROR(get_logger(), "more joints than values??? num is: %i", info_.joints.size());
+	if (info_.joints.size() > state_joints.size()) {
+		RCLCPP_ERROR(get_logger(), "more joints than values???");
 		for (int i = 0; i < info_.joints.size(); i++) {
 			RCLCPP_INFO(get_logger(), "%s", info_.joints[i].name.c_str());
 			RCLCPP_ERROR(get_logger(), "joint???");
@@ -84,7 +80,7 @@ std::vector<hardware_interface::StateInterface> DummyHardware::export_state_inte
 	
 
 	for (unsigned int i = 0; i < info_.joints.size(); i++) {
-		interfaces.emplace_back(hardware_interface::StateInterface(info_.joints[i].name, hardware_interface::HW_IF_POSITION, &joints[i]));	
+		interfaces.emplace_back(hardware_interface::StateInterface(info_.joints[i].name, hardware_interface::HW_IF_POSITION, &state_joints[i]));	
 	}
 	
 	return interfaces;
@@ -95,7 +91,7 @@ std::vector<hardware_interface::CommandInterface> DummyHardware::export_command_
 	std::vector<hardware_interface::CommandInterface> interfaces;
 
 	for (unsigned int i = 0; i < info_.joints.size(); i++) {
-		interfaces.emplace_back(hardware_interface::CommandInterface(info_.joints[i].name, hardware_interface::HW_IF_POSITION, &joints[i]));	
+		interfaces.emplace_back(hardware_interface::CommandInterface(info_.joints[i].name, hardware_interface::HW_IF_POSITION, &cmd_joints[i]));	
 	}
 
 	return interfaces;
@@ -106,10 +102,31 @@ hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, c
 }
 
 hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
-	std::stringstream ss;
-	ss << "<" << joints.at(0) << "," << joints.at(1) << "," << joints.at(2) << ">";
-	serial.writeString(ss.str().c_str());
+	if (cmd_joints == cmd_joints_cache) {
+		return hardware_interface::return_type::OK;
+	}
+
+
 	
+	using namespace std::chrono;
+
+	std::chrono::milliseconds deley(20);
+
+	if (duration_cast<milliseconds>(system_clock::now().time_since_epoch()) - last_message < deley) {
+		return hardware_interface::return_type::OK;
+	}
+	
+
+	std::stringstream ss;
+	ss << "<" << cmd_joints.at(0) * RAD_TO_DEGREE << "," << cmd_joints.at(1) * RAD_TO_DEGREE << "," << cmd_joints.at(2) * RAD_TO_DEGREE << ">";
+	RCLCPP_INFO(get_logger(), "sending data");
+	RCLCPP_INFO(get_logger(), "%s", ss.str().c_str());
+	serial.writeString(ss.str().c_str());
+
+	state_joints = cmd_joints;
+	cmd_joints_cache = cmd_joints;
+	
+	last_message = duration_cast<milliseconds>(system_clock::now().time_since_epoch());
 	return hardware_interface::return_type::OK;
 }
 

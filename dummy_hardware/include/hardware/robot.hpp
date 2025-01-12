@@ -15,7 +15,10 @@
 #include "rclcpp_lifecycle/state.hpp"
 #include <memory>
 #include <vector>
+#include <chrono>
 #include "serial.h"
+
+const double RAD_TO_DEGREE = 180/3.14;
 
 namespace hardware {
 class DummyHardware : public hardware_interface::SystemInterface {
@@ -37,10 +40,15 @@ public:
   int thing() {
     serialib ser;
     ser.isDeviceOpen();
+    return 0;
   }
 
 private:
-  std::vector<double> joints = {0,0,0};	
+  std::vector<double> cmd_joints = {0,0,0};
+  std::vector<double> cmd_joints_cache = {0,0,0};
+  std::vector<double> state_joints = {0,0,0};
+  std::chrono::milliseconds last_message;
+
   serialib serial;
 };
 

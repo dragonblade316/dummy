@@ -23,8 +23,8 @@ char receivedChars[numChars];
 boolean newData = false;
 
 void setup() {
-  //Serial.begin(115200);
-  Serial.begin(9600);
+  Serial.begin(115200);
+  //Serial.begin(9600);
   Serial.println("started");
 
 
