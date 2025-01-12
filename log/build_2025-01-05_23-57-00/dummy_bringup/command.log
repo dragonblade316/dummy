@@ -1,0 +1,1 @@
+Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dragonblade316/Programming/robotics/dummy/dummy_bringup -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup

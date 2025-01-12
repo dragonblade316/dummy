@@ -1,0 +1,61 @@
+[0.018s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.169s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.170s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.170s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.171s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.171s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.171s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.172s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.172s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.172s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.172s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.221s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.245s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.253s] -- Found hardware_interface: 2.46.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.311s] -- Found serial: 1.2.1 (/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/cmake)
+[0.315s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.352s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.352s] -- Configured cppcheck include dirs: /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware
+[0.352s] -- Configured cppcheck exclude dirs and/or files: 
+[0.352s] -- Added test 'lint_cmake' to check CMake code style
+[0.352s] -- Added test 'uncrustify' to check C / C++ code style
+[0.352s] -- Configured uncrustify additional arguments: 
+[0.352s] -- Added test 'xmllint' to check XML markup files
+[0.353s] -- Configuring done
+[0.365s] -- Generating done
+[0.367s] -- Build files have been written to: /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware
+[0.383s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.394s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[0.396s] [ 66%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/serial.cpp.o[0m
+[0.409s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/serial.cpp:18:10: [0m[0;1;31mfatal error: [0m[1m'serialib.h' file not found[0m
+[0.409s] #include "serialib.h"
+[0.409s] [0;1;32m         ^~~~~~~~~~~~
+[0.409s] [0m1 error generated.
+[0.411s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:90: CMakeFiles/dummy_hardware.dir/src/serial.cpp.o] Error 1
+[0.411s] gmake[2]: *** Waiting for unfinished jobs....
+[0.707s] In file included from /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:1:
+[0.707s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:38:3: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+[0.707s]   }
+[0.707s] [0;1;32m  ^
+[1.461s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:54:16: [0m[0;1;35mwarning: [0m[1mISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings][0m
+[1.461s]         char* zeros = "<0,0,0>";
+[1.461s] [0;1;32m                      ^
+[1.461s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:57:7: [0m[0;1;35mwarning: [0m[1munused variable 'errorOpening' [-Wunused-variable][0m
+[1.461s]         char errorOpening = serial.openDevice(SERIAL_PORT, BAUD);
+[1.461s] [0;1;32m             ^
+[1.463s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:79:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.464s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.464s] [0;1;32m                                                                         ^
+[1.464s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:79:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.464s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.464s] [0;1;32m                                                                                                        ^
+[1.464s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:83:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.464s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.464s] [0;1;32m                                                                          ^
+[1.464s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:83:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.464s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.464s] [0;1;32m                                                                                                         ^
+[1.751s] [0m7 warnings generated.
+[1.757s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.757s] gmake: *** [Makefile:146: all] Error 2
+[1.759s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

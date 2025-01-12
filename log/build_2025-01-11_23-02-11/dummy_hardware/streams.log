@@ -1,0 +1,33 @@
+[0.016s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.178s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.178s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[0.368s] In file included from /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:1:
+[0.368s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:40:3: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+[0.368s]   }
+[0.368s] [0;1;32m  ^
+[1.106s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:12: [0m[0;1;31merror: [0m[1mno member named 'state_joints' in 'hardware_interface::HardwareInfo'[0m
+[1.107s]         if (info_.state_joints.size() > joints.size()) {
+[1.107s] [0;1;32m            ~~~~~ ^
+[1.115s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:34: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'joints'[0m
+[1.115s]         if (info_.state_joints.size() > joints.size()) {
+[1.115s] [0;1;32m                                        ^
+[1.116s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:74:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+[1.116s]                 for (int i = 0; i < info_.joints.size(); i++) {
+[1.116s] [0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[1.118s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.118s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.118s] [0;1;32m                                                                         ^
+[1.118s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.118s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.118s] [0;1;32m                                                                                                        ^
+[1.118s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.118s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.118s] [0;1;32m                                                                          ^
+[1.118s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.118s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.118s] [0;1;32m                                                                                                         ^
+[1.303s] [0m6 warnings and 2 errors generated.
+[1.311s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.311s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.311s] gmake: *** [Makefile:146: all] Error 2
+[1.313s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

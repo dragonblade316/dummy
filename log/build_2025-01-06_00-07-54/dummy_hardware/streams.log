@@ -1,0 +1,29 @@
+[0.005s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': AMENT_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.083s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:40:9: [0m[0;1;31merror: [0m[1mexpected expression[0m
+[1.083s]         /*/**/*/
+[1.083s] [0;1;32m               ^
+[1.083s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:43:9: [0m[0;1;31merror: [0m[1mexpected expression[0m
+[1.083s]         /*/**/*/
+[1.083s] [0;1;32m               ^
+[1.083s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:46:2: [0m[0;1;31merror: [0m[1mexpected expression[0m
+[1.083s]         return CallbackReturn::SUCCESS;
+[1.083s] [0;1;32m        ^
+[1.085s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:65:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.085s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.085s] [0;1;32m                                                                         ^
+[1.085s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:65:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.085s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.085s] [0;1;32m                                                                                                        ^
+[1.085s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:69:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.085s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.085s] [0;1;32m                                                                          ^
+[1.085s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:69:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.085s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.085s] [0;1;32m                                                                                                         ^
+[1.263s] [0m4 warnings and 3 errors generated.
+[1.271s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.271s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.271s] gmake: *** [Makefile:146: all] Error 2
+[1.273s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': AMENT_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

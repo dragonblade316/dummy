@@ -1,0 +1,649 @@
+[0.058s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--build-base', 'build_clang', '--install-base', 'install_clang', '--cmake-args', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='/home/dragonblade316/Programming/robotics/dummy/build_clang', install_base='/home/dragonblade316/Programming/robotics/dummy/install_clang', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73f12fdabe20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73f12feecd90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73f12feecd90>>, mixin_verb=('build',))
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.135s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dragonblade316/Programming/robotics/dummy'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['cmake', 'python']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'cmake'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'python'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extensions ['python_setup_py']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(arduino/sketch_dec20a) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build_clang) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(build_clang) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build_clang) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_bringup) by extension 'ros'
+[0.143s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_bringup' with type 'ros.ament_cmake' and name 'dummy_bringup'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_controller) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_controller' with type 'ros.ament_cmake' and name 'dummy_controller'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_description) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_description' with type 'ros.ament_cmake' and name 'dummy_description'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_hardware) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_hardware' with type 'ros.ament_cmake' and name 'dummy_hardware'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_joy_control) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_joy_control' with type 'ros.ament_cmake' and name 'dummy_joy_control'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_motion) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_motion' with type 'ros.ament_cmake' and name 'dummy_motion'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_serial) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_serial' with type 'ros.ament_python' and name 'dummy_serial'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install_clang) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install_clang) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install_clang) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(moveit_config) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'moveit_config' with type 'ros.ament_cmake' and name 'moveit_config'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(serial-ros2) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'serial-ros2' with type 'ros.ament_cmake' and name 'serial'
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.163s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/dragonblade316/Programming/robotics/dummy/install_clang
+[0.164s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 374 installed packages in /opt/ros/humble
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_controller', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'dummy_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_description', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_hardware', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_joy_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_joy_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_joy_control', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_motion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_motion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_motion', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'dummy_serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/dummy_serial', 'symlink_install': True, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/serial-ros2', 'symlink_install': True, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config', 'merge_install': False, 'path': '/home/dragonblade316/Programming/robotics/dummy/moveit_config', 'symlink_install': True, 'test_result_base': None}
+[0.188s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.188s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.189s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_description' with build type 'ament_cmake'
+[0.189s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_description'
+[0.190s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.192s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_bringup' with build type 'ament_cmake'
+[0.192s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_bringup'
+[0.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.194s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_controller' with build type 'ament_cmake'
+[0.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_controller'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.196s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_hardware' with build type 'ament_cmake'
+[0.196s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_hardware'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_joy_control' with build type 'ament_cmake'
+[0.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_joy_control'
+[0.198s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.198s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_motion' with build type 'ament_cmake'
+[0.200s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/dummy_motion'
+[0.200s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.200s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.201s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/dummy_serial' with build type 'ament_python'
+[0.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_serial', 'ament_prefix_path')
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/ament_prefix_path.ps1'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/ament_prefix_path.dsv'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/ament_prefix_path.sh'
+[0.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.204s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/serial-ros2' with build type 'ament_cmake'
+[0.204s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/serial-ros2'
+[0.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description -- -j20 -l20
+[0.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup -- -j20 -l20
+[0.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller -- -j20 -l20
+[0.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control -- -j20 -l20
+[0.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion -- -j20 -l20
+[0.360s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dragonblade316/Programming/robotics/dummy/dummy_serial'
+[0.361s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.361s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/serial -- -j20 -l20
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion -- -j20 -l20
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description -- -j20 -l20
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller -- -j20 -l20
+[0.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller
+[0.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control -- -j20 -l20
+[0.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control
+[0.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup -- -j20 -l20
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup
+[0.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_joy_control)
+[0.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control' for CMake module files
+[0.391s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control' for CMake config files
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_joy_control', 'cmake_prefix_path')
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.sh'
+[0.392s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/bin'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib/pkgconfig/dummy_joy_control.pc'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib/python3.10/site-packages'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/bin'
+[0.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.dsv'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.sh'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.bash'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.zsh'
+[0.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/colcon-core/packages/dummy_joy_control)
+[0.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_joy_control)
+[0.396s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control' for CMake module files
+[0.396s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control' for CMake config files
+[0.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_joy_control', 'cmake_prefix_path')
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.ps1'
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.dsv'
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/hook/cmake_prefix_path.sh'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/bin'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib/pkgconfig/dummy_joy_control.pc'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/lib/python3.10/site-packages'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/bin'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.ps1'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.dsv'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.sh'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.bash'
+[0.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/dummy_joy_control/package.zsh'
+[0.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control/share/colcon-core/packages/dummy_joy_control)
+[0.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_motion)
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion' for CMake module files
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_motion
+[0.399s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion' for CMake config files
+[0.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_motion', 'cmake_prefix_path')
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.ps1'
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.dsv'
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.sh'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/bin'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/lib/pkgconfig/dummy_motion.pc'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/lib/python3.10/site-packages'
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/bin'
+[0.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.ps1'
+[0.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.dsv'
+[0.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.sh'
+[0.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.bash'
+[0.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.zsh'
+[0.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/colcon-core/packages/dummy_motion)
+[0.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_motion)
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion' for CMake module files
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion' for CMake config files
+[0.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_motion', 'cmake_prefix_path')
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.ps1'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/hook/cmake_prefix_path.sh'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/bin'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/lib/pkgconfig/dummy_motion.pc'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/lib/python3.10/site-packages'
+[0.403s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/bin'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.ps1'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.dsv'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.sh'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.bash'
+[0.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/dummy_motion/package.zsh'
+[0.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion/share/colcon-core/packages/dummy_motion)
+[0.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_bringup)
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup' for CMake module files
+[0.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_bringup
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup' for CMake config files
+[0.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_bringup', 'cmake_prefix_path')
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.ps1'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.dsv'
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.sh'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/bin'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/lib/pkgconfig/dummy_bringup.pc'
+[0.405s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/lib/python3.10/site-packages'
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/bin'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.sh'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.bash'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.zsh'
+[0.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/colcon-core/packages/dummy_bringup)
+[0.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_bringup)
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup' for CMake module files
+[0.407s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup' for CMake config files
+[0.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_bringup', 'cmake_prefix_path')
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.ps1'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/hook/cmake_prefix_path.sh'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/bin'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/lib/pkgconfig/dummy_bringup.pc'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/lib/python3.10/site-packages'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/bin'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.ps1'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.dsv'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.sh'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.bash'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/dummy_bringup/package.zsh'
+[0.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup/share/colcon-core/packages/dummy_bringup)
+[0.409s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_controller)
+[0.409s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller' for CMake module files
+[0.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller' for CMake config files
+[0.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_controller', 'cmake_prefix_path')
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.ps1'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.dsv'
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.sh'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/bin'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib/pkgconfig/dummy_controller.pc'
+[0.410s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib/python3.10/site-packages'
+[0.411s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/bin'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.sh'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.bash'
+[0.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.zsh'
+[0.411s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/colcon-core/packages/dummy_controller)
+[0.412s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_controller)
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller' for CMake module files
+[0.412s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller' for CMake config files
+[0.412s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_controller', 'cmake_prefix_path')
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.ps1'
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.dsv'
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/hook/cmake_prefix_path.sh'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/bin'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib/pkgconfig/dummy_controller.pc'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/lib/python3.10/site-packages'
+[0.413s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/bin'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.ps1'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.dsv'
+[0.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.sh'
+[0.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.bash'
+[0.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/dummy_controller/package.zsh'
+[0.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller/share/colcon-core/packages/dummy_controller)
+[0.414s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_description)
+[0.414s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description' for CMake module files
+[0.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description
+[0.414s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description' for CMake config files
+[0.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_description', 'cmake_prefix_path')
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.ps1'
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.dsv'
+[0.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.sh'
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/bin'
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/lib/pkgconfig/dummy_description.pc'
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/lib/python3.10/site-packages'
+[0.415s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/bin'
+[0.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.dsv'
+[0.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.sh'
+[0.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.bash'
+[0.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.zsh'
+[0.416s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/colcon-core/packages/dummy_description)
+[0.416s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_description)
+[0.416s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description' for CMake module files
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description' for CMake config files
+[0.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_description', 'cmake_prefix_path')
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.ps1'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.dsv'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/hook/cmake_prefix_path.sh'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/bin'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/lib/pkgconfig/dummy_description.pc'
+[0.417s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/lib/python3.10/site-packages'
+[0.418s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/bin'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.ps1'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.dsv'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.sh'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.bash'
+[0.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.zsh'
+[0.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/colcon-core/packages/dummy_description)
+[0.419s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dragonblade316/Programming/robotics/dummy/moveit_config' with build type 'ament_cmake'
+[0.419s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dragonblade316/Programming/robotics/dummy/moveit_config'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.419s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/serial -- -j20 -l20
+[0.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/serial
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config': CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config -- -j20 -l20
+[0.435s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.435s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial' for CMake module files
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/serial
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial' for CMake config files
+[0.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib'
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/bin'
+[0.437s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/pkgconfig/serial.pc'
+[0.438s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/python3.10/site-packages'
+[0.438s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/bin'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.ps1'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.dsv'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.sh'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.bash'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.zsh'
+[0.439s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/colcon-core/packages/serial)
+[0.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial' for CMake module files
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial' for CMake config files
+[0.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/bin'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/pkgconfig/serial.pc'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/python3.10/site-packages'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/bin'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.ps1'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.dsv'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.sh'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.bash'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/serial/package.zsh'
+[0.444s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/serial/share/colcon-core/packages/serial)
+[0.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config -- -j20 -l20
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config': CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config
+[0.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_config)
+[0.467s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config' for CMake module files
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description:/home/dragonblade316/Programming/robotics/dummy/install_clang/serial:/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_motion:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_joy_control:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_controller:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_bringup:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/moveit_config
+[0.467s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config' for CMake config files
+[0.467s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_config', 'cmake_prefix_path')
+[0.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.ps1'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.dsv'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.sh'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/bin'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/lib/pkgconfig/moveit_config.pc'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/lib/python3.10/site-packages'
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/bin'
+[0.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.ps1'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.dsv'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.sh'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.bash'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.zsh'
+[0.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/colcon-core/packages/moveit_config)
+[0.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_config)
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config' for CMake module files
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config' for CMake config files
+[0.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_config', 'cmake_prefix_path')
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.ps1'
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.dsv'
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/hook/cmake_prefix_path.sh'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/bin'
+[0.470s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/lib/pkgconfig/moveit_config.pc'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/lib/python3.10/site-packages'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/bin'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.ps1'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.dsv'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.sh'
+[0.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.bash'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/moveit_config/package.zsh'
+[0.472s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/moveit_config/share/colcon-core/packages/moveit_config)
+[0.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial': PYTHONPATH=/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/build --no-deps symlink_data
+[0.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_serial', 'pythonpath_develop')
+[0.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.ps1'
+[0.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial' returned '0': PYTHONPATH=/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/build --no-deps symlink_data
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.dsv'
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.sh'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial' for CMake module files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial' for CMake config files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/bin'
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/pkgconfig/dummy_serial.pc'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/lib/python3.10/site-packages'
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_serial', 'pythonpath')
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/pythonpath.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/pythonpath.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/hook/pythonpath.sh'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/bin'
+[0.754s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_serial)
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/package.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/package.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/package.sh'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/package.bash'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/dummy_serial/package.zsh'
+[0.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial/share/colcon-core/packages/dummy_serial)
+[1.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[1.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware
+[1.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_hardware)
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware' for CMake module files
+[1.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware' for CMake config files
+[1.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_hardware', 'cmake_prefix_path')
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.dsv'
+[1.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.sh'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/bin'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib/pkgconfig/dummy_hardware.pc'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib/python3.10/site-packages'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/bin'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.ps1'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.dsv'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.sh'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.bash'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.zsh'
+[1.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/colcon-core/packages/dummy_hardware)
+[1.704s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_hardware)
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware' for CMake module files
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware' for CMake config files
+[1.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_hardware', 'cmake_prefix_path')
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.ps1'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.dsv'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/hook/cmake_prefix_path.sh'
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib'
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/bin'
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib/pkgconfig/dummy_hardware.pc'
+[1.705s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib/python3.10/site-packages'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/bin'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.ps1'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.sh'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.bash'
+[1.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.zsh'
+[1.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/colcon-core/packages/dummy_hardware)
+[1.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.707s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.710s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.710s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.710s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.715s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.715s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dragonblade316/Programming/robotics/dummy/install_clang/local_setup.ps1'
+[1.716s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dragonblade316/Programming/robotics/dummy/install_clang/_local_setup_util_ps1.py'
+[1.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dragonblade316/Programming/robotics/dummy/install_clang/setup.ps1'
+[1.717s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dragonblade316/Programming/robotics/dummy/install_clang/local_setup.sh'
+[1.717s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dragonblade316/Programming/robotics/dummy/install_clang/_local_setup_util_sh.py'
+[1.718s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dragonblade316/Programming/robotics/dummy/install_clang/setup.sh'
+[1.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dragonblade316/Programming/robotics/dummy/install_clang/local_setup.bash'
+[1.718s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dragonblade316/Programming/robotics/dummy/install_clang/setup.bash'
+[1.719s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dragonblade316/Programming/robotics/dummy/install_clang/local_setup.zsh'
+[1.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dragonblade316/Programming/robotics/dummy/install_clang/setup.zsh'

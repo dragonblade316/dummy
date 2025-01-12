@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:68:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:68:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                        ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                         ^
+[0m4 warnings generated.
+[100%] [32m[1mLinking CXX shared library libdummy_hardware.so[0m
+/usr/bin/ld: /home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/libserial.a(unix.cc.o): warning: relocation against `_ZN6serial11IOExceptionD2Ev' in read-only section `.text'
+/usr/bin/ld: /home/dragonblade316/Programming/robotics/dummy/install_clang/serial/lib/libserial.a(serial.cc.o): relocation R_X86_64_PC32 against symbol `_ZTVN6serial6SerialE' can not be used when making a shared object; recompile with -fPIC
+/usr/bin/ld: final link failed: bad value
+clang: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:288: libdummy_hardware.so] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

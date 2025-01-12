@@ -1,0 +1,149 @@
+[0.022s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.188s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.188s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.254s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:74:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+[1.254s]                 for (int i = 0; i < info_.joints.size(); i++) {
+[1.254s] [0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[1.256s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.256s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.256s] [0;1;32m                                                                         ^
+[1.256s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.256s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.256s] [0;1;32m                                                                                                        ^
+[1.257s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:110:73: [0m[0;1;31merror: [0m[1minvalid operands to binary expression ('typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>') and 'int')[0m
+[1.257s]         if (std::chrono::system_clock::now().time_since_epoch() - last_message < 20) {
+[1.257s] [0;1;32m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~
+[1.258s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:269:3: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>') to 'const std::error_code' for 1st argument[0m
+[1.258s]   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+[1.258s] [0;1;32m  ^
+[1.258s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error:398:3: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>') to 'const std::error_condition' for 1st argument[0m
+[1.258s]   operator<(const error_condition& __lhs,
+[1.258s] [0;1;32m  ^
+[1.258s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread:70:3: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>') to 'thread::id' for 1st argument[0m
+[1.258s]   operator<(thread::id __x, thread::id __y) noexcept
+[1.258s] [0;1;32m  ^
+[1.258s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/variant:1272:18: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>') to 'std::monostate' for 1st argument[0m
+[1.258s]   constexpr bool operator<(monostate, monostate) noexcept { return false; }
+[1.258s] [0;1;32m                 ^
+[1.258s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_pair.h:489:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'pair' against 'duration'[0m
+[1.258s]     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator.h:426:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'reverse_iterator' against 'duration'[0m
+[1.259s]     operator<(const reverse_iterator<_Iterator>& __x,
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator.h:465:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'reverse_iterator' against 'duration'[0m
+[1.259s]     operator<(const reverse_iterator<_IteratorL>& __x,
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator.h:1609:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'move_iterator' against 'duration'[0m
+[1.259s]     operator<(const move_iterator<_IteratorL>& __x,
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator.h:1667:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'move_iterator' against 'duration'[0m
+[1.259s]     operator<(const move_iterator<_Iterator>& __x,
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:589:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'basic_string_view' against 'duration'[0m
+[1.259s]     operator< (basic_string_view<_CharT, _Traits> __x,
+[1.259s] [0;1;32m    ^
+[1.259s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:595:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'basic_string_view' against 'duration'[0m
+[1.260s]     operator< (basic_string_view<_CharT, _Traits> __x,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view:602:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'basic_string_view<_CharT, _Traits>' against 'int'[0m
+[1.260s]     operator< (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6340:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'basic_string' against 'duration'[0m
+[1.260s]     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6353:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'basic_string' against 'duration'[0m
+[1.260s]     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h:6365:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'const _CharT *' against 'typename common_type<duration<long, ratio<1, 1000000000>>, duration<long, ratio<1, 1000>>>::type' (aka 'duration<long, ratio<num, den>>')[0m
+[1.260s]     operator<(const _CharT* __lhs,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/array:311:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'array' against 'duration'[0m
+[1.260s]     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tuple:1566:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'tuple' against 'duration'[0m
+[1.260s]     operator<(const tuple<_TElements...>& __t,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:795:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'unique_ptr' against 'duration'[0m
+[1.260s]     operator<(const unique_ptr<_Tp, _Dp>& __x,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:807:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'unique_ptr' against 'duration'[0m
+[1.260s]     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h:816:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'unique_ptr<_Tp, _Dp>' against 'int'[0m
+[1.260s]     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:1457:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match '__shared_ptr' against 'duration'[0m
+[1.260s]     operator<(const __shared_ptr<_Tp, _Lp>& __a,
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:1468:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match '__shared_ptr' against 'duration'[0m
+[1.260s]     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[1.260s] [0;1;32m    ^
+[1.260s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_base.h:1476:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match '__shared_ptr<_Tp, _Lp>' against 'int'[0m
+[1.260s]     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[1.260s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:488:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'shared_ptr' against 'duration'[0m
+[1.261s]     operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:499:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'shared_ptr' against 'duration'[0m
+[1.261s]     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr.h:508:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'shared_ptr<_Tp>' against 'int'[0m
+[1.261s]     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h:1930:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'vector' against 'duration'[0m
+[1.261s]     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono:772:7: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'duration<_Rep2, _Period2>' against 'int'[0m
+[1.261s]       operator<(const duration<_Rep1, _Period1>& __lhs,
+[1.261s] [0;1;32m      ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono:1075:7: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'time_point' against 'duration'[0m
+[1.261s]       operator<(const time_point<_Clock, _Dur1>& __lhs,
+[1.261s] [0;1;32m      ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_map.h:1501:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'map' against 'duration'[0m
+[1.261s]     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_multimap.h:1166:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'multimap' against 'duration'[0m
+[1.261s]     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_set.h:1023:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'set' against 'duration'[0m
+[1.261s]     operator<(const set<_Key, _Compare, _Alloc>& __x,
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_multiset.h:1009:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'multiset' against 'duration'[0m
+[1.261s]     operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_list.h:2085:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'list' against 'duration'[0m
+[1.261s]     operator<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:1063:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'optional' against 'duration'[0m
+[1.261s]     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:1131:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'optional' against 'duration'[0m
+[1.261s]     operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:1136:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'optional<_Tp>' against 'int'[0m
+[1.261s]     operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:1197:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'optional' against 'duration'[0m
+[1.261s]     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional:1203:5: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'optional<_Tp>' against 'int'[0m
+[1.261s]     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)
+[1.261s] [0;1;32m    ^
+[1.261s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/variant:1230:3: [0m[0;1;30mnote: [0mcandidate template ignored: could not match 'variant' against 'duration'[0m
+[1.262s]   _VARIANT_RELATION_FUNCTION_TEMPLATE(<, less)
+[1.262s] [0;1;32m  ^
+[1.262s] [0m[1m/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/variant:1207:20: [0m[0;1;30mnote: [0mexpanded from macro '_VARIANT_RELATION_FUNCTION_TEMPLATE'[0m
+[1.262s]     constexpr bool operator __OP(const variant<_Types...>& __lhs, \
+[1.262s] [0;1;32m                   ^
+[1.262s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.262s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.262s] [0;1;32m                                                                          ^
+[1.262s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.262s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.262s] [0;1;32m                                                                                                         ^
+[1.451s] [0m5 warnings and 1 error generated.
+[1.458s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.458s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.458s] gmake: *** [Makefile:146: all] Error 2
+[1.460s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

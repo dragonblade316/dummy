@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/main.cpp.o[0m
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_joy_control/src/main.cpp:74:10: [0m[0;1;35mwarning: [0m[1mprivate field 'count_' is not used [-Wunused-private-field][0m
+  size_t count_;
+[0;1;32m         ^
+[0m1 warning generated.
+[100%] [32m[1mLinking CXX executable controller[0m
+[100%] Built target controller

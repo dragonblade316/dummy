@@ -1,0 +1,8 @@
+In file included from /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/serial.cpp:18:
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/serial.h:220:21: [0m[0;1;35mwarning: [0m[1mprivate field 'currentStateRTS' is not used [-Wunused-private-field][0m
+    bool            currentStateRTS;
+[0;1;32m                    ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/serial.h:221:21: [0m[0;1;35mwarning: [0m[1mprivate field 'currentStateDTR' is not used [-Wunused-private-field][0m
+    bool            currentStateDTR;
+[0;1;32m                    ^
+[0m2 warnings generated.

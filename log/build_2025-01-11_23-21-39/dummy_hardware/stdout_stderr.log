@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:74:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+                for (int i = 0; i < info_.joints.size(); i++) {
+[0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                        ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:108:2: [0m[0;1;31merror: [0m[1mno matching function for call to 'rcutils_log'[0m
+        RCLCPP_INFO(get_logger(), ss.str());
+[0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:535:5: [0m[0;1;30mnote: [0mexpanded from macro 'RCLCPP_INFO'[0m
+    RCUTILS_LOG_INFO_NAMED( \
+[0;1;32m    ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:507:3: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_INFO_NAMED'[0m
+  RCUTILS_LOG_COND_NAMED( \
+[0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:79:7: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_COND_NAMED'[0m
+      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[0;1;32m      ^~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rcutils/rcutils/logging.h:475:6: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'std::basic_stringstream<char>::__string_type' (aka 'basic_string<char, std::char_traits<char>, std::allocator<char>>') to 'const char *' for 4th argument[0m
+void rcutils_log(
+[0;1;32m     ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                         ^
+[0m5 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

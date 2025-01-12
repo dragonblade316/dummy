@@ -1,0 +1,1 @@
+Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control -- -j20 -l20

@@ -1,0 +1,38 @@
+[0.020s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.198s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.199s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.331s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:74:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+[1.331s]                 for (int i = 0; i < info_.joints.size(); i++) {
+[1.331s] [0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[1.333s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.333s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.333s] [0;1;32m                                                                         ^
+[1.333s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.333s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.333s] [0;1;32m                                                                                                        ^
+[1.334s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:108:2: [0m[0;1;31merror: [0m[1mno matching function for call to 'rcutils_log'[0m
+[1.334s]         RCLCPP_INFO(get_logger(), ss.str());
+[1.334s] [0;1;32m        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.334s] [0m[1m/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:535:5: [0m[0;1;30mnote: [0mexpanded from macro 'RCLCPP_INFO'[0m
+[1.334s]     RCUTILS_LOG_INFO_NAMED( \
+[1.334s] [0;1;32m    ^~~~~~~~~~~~~~~~~~~~~~~~~
+[1.334s] [0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:507:3: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_INFO_NAMED'[0m
+[1.334s]   RCUTILS_LOG_COND_NAMED( \
+[1.334s] [0;1;32m  ^~~~~~~~~~~~~~~~~~~~~~~~~
+[1.334s] [0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:79:7: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_COND_NAMED'[0m
+[1.334s]       rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[1.335s] [0;1;32m      ^~~~~~~~~~~
+[1.335s] [0m[1m/opt/ros/humble/include/rcutils/rcutils/logging.h:475:6: [0m[0;1;30mnote: [0mcandidate function not viable: no known conversion from 'std::basic_stringstream<char>::__string_type' (aka 'basic_string<char, std::char_traits<char>, std::allocator<char>>') to 'const char *' for 4th argument[0m
+[1.335s] void rcutils_log(
+[1.335s] [0;1;32m     ^
+[1.335s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.335s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.335s] [0;1;32m                                                                          ^
+[1.335s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.335s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.335s] [0;1;32m                                                                                                         ^
+[1.528s] [0m5 warnings and 1 error generated.
+[1.536s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.537s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.537s] gmake: *** [Makefile:146: all] Error 2
+[1.538s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

@@ -1,0 +1,69 @@
+[0.022s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.203s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.203s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.311s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:23:38: [0m[0;1;31merror: [0m[1mexpected ';' after top level declarator[0m
+[1.311s] const double RAD_TO_DEGREE = 3.14/180 
+[1.311s] [0;1;32m                                     ^
+[1.311s] [0m[0;32m                                     ;
+[1.320s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:33:36: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.320s] hardware_interface::CallbackReturn DummyHardware::on_init(const hardware_interface::HardwareInfo &info) {
+[1.320s] [0;1;32m                                   ^~~~~~~~~~~~~
+[1.320s] [0m[0;32m                                   hardware::DummyHardware
+[1.320s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.320s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.320s] [0;1;32m      ^
+[1.329s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:43:36: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.329s] hardware_interface::CallbackReturn DummyHardware::on_configure(
+[1.329s] [0;1;32m                                   ^~~~~~~~~~~~~
+[1.329s] [0m[0;32m                                   hardware::DummyHardware
+[1.329s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.330s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.330s] [0;1;32m      ^
+[1.339s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:69:49: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.339s] std::vector<hardware_interface::StateInterface> DummyHardware::export_state_interfaces() {
+[1.339s] [0;1;32m                                                ^~~~~~~~~~~~~
+[1.339s] [0m[0;32m                                                hardware::DummyHardware
+[1.339s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.339s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.339s] [0;1;32m      ^
+[1.341s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:74:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+[1.341s]                 for (int i = 0; i < info_.joints.size(); i++) {
+[1.341s] [0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[1.350s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:90:51: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.350s] std::vector<hardware_interface::CommandInterface> DummyHardware::export_command_interfaces() {
+[1.350s] [0;1;32m                                                  ^~~~~~~~~~~~~
+[1.350s] [0m[0;32m                                                  hardware::DummyHardware
+[1.350s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.350s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.350s] [0;1;32m      ^
+[1.360s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:33: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.360s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.360s] [0;1;32m                                ^~~~~~~~~~~~~
+[1.360s] [0m[0;32m                                hardware::DummyHardware
+[1.360s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.360s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.360s] [0;1;32m      ^
+[1.360s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.360s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.360s] [0;1;32m                                                                         ^
+[1.360s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:100:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.361s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.361s] [0;1;32m                                                                                                        ^
+[1.369s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:33: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'DummyHardware'; did you mean 'hardware::DummyHardware'?[0m
+[1.369s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.369s] [0;1;32m                                ^~~~~~~~~~~~~
+[1.369s] [0m[0;32m                                hardware::DummyHardware
+[1.369s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:21:7: [0m[0;1;30mnote: [0m'hardware::DummyHardware' declared here[0m
+[1.369s] class DummyHardware : public hardware_interface::SystemInterface {
+[1.369s] [0;1;32m      ^
+[1.370s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.370s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.370s] [0;1;32m                                                                          ^
+[1.370s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.370s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.370s] [0;1;32m                                                                                                         ^
+[1.552s] [0m5 warnings and 7 errors generated.
+[1.561s] gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+[1.561s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+[1.561s] gmake: *** [Makefile:146: all] Error 2
+[1.562s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20

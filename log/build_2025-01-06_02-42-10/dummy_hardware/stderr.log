@@ -1,0 +1,33 @@
+In file included from /home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:1:
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/./include/hardware/robot.hpp:40:3: [0m[0;1;35mwarning: [0m[1mnon-void function does not return a value [-Wreturn-type][0m
+  }
+[0;1;32m  ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:77:71: [0m[0;1;35mwarning: [0m[1mformat specifies type 'int' but the argument has type 'std::vector::size_type' (aka 'unsigned long') [-Wformat][0m
+                RCLCPP_ERROR(get_logger(), "more joints than values??? num is: %i", info_.joints.size());
+[0;1;32m                                                                               ~~   ^~~~~~~~~~~~~~~~~~~
+[0m[0;32m                                                                               %zu
+[0m[1m/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:1407:7: [0m[0;1;30mnote: [0mexpanded from macro 'RCLCPP_ERROR'[0m
+      __VA_ARGS__); \
+[0;1;32m      ^~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:1004:5: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_ERROR_NAMED'[0m
+    __VA_ARGS__)
+[0;1;32m    ^~~~~~~~~~~
+[0m[1m/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:79:64: [0m[0;1;30mnote: [0mexpanded from macro 'RCUTILS_LOG_COND_NAMED'[0m
+      rcutils_log(&__rcutils_logging_location, severity, name, __VA_ARGS__); \
+[0;1;32m                                                               ^~~~~~~~~~~
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:78:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+                for (int i = 0; i < info_.joints.size(); i++) {
+[0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:104:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                        ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:108:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:108:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                         ^
+[0m7 warnings generated.

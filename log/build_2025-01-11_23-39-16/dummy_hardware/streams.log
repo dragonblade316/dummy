@@ -1,0 +1,45 @@
+[0.019s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[0.177s] [35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[0.177s] [ 33%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1.211s] [1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:73:21: [0m[0;1;35mwarning: [0m[1mcomparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [-Wsign-compare][0m
+[1.211s]                 for (int i = 0; i < info_.joints.size(); i++) {
+[1.211s] [0;1;32m                                ~ ^ ~~~~~~~~~~~~~~~~~~~
+[1.213s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:99:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.213s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.213s] [0;1;32m                                                                         ^
+[1.213s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:99:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.213s] hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.213s] [0;1;32m                                                                                                        ^
+[1.214s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:103:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+[1.214s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.214s] [0;1;32m                                                                          ^
+[1.214s] [0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:103:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+[1.214s] hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[1.214s] [0;1;32m                                                                                                         ^
+[1.537s] [0m5 warnings generated.
+[1.548s] [ 66%] [32m[1mLinking CXX shared library libdummy_hardware.so[0m
+[1.666s] [100%] Built target dummy_hardware
+[1.674s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --build /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware -- -j20 -l20
+[1.674s] Invoking command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware
+[1.680s] -- Install configuration: ""
+[1.680s] -- Execute custom install script
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/lib/dummy_hardware/libdummy_hardware.so
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware//dummy_hardware.xml
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/ament_index/resource_index/package_run_dependencies/dummy_hardware
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/ament_index/resource_index/parent_prefix_path/dummy_hardware
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/environment/ament_prefix_path.sh
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/environment/ament_prefix_path.dsv
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/environment/path.sh
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/environment/path.dsv
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/local_setup.bash
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/local_setup.sh
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/local_setup.zsh
+[1.681s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/local_setup.dsv
+[1.681s] -- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.dsv
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/ament_index/resource_index/packages/dummy_hardware
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/dummy_hardware
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/cmake/dummy_hardwareConfig.cmake
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/cmake/dummy_hardwareConfig-version.cmake
+[1.687s] -- Up-to-date symlink: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_hardware/share/dummy_hardware/package.xml
+[1.688s] Invoked command in '/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_serial:/opt/ros/humble /usr/bin/cmake --install /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_hardware

@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target dummy_hardware[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dummy_hardware.dir/src/robot.cpp.o[0m
+[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:45:28: [0m[0;1;31merror: [0m[1mexpected '(' for function-style cast or type construction[0m
+        auto ser = serial::Serial my_serial("/dev/ttyACM1", 9600, serial::Timeout::simpleTimeout(1000));
+[0;1;32m                   ~~~~~~~~~~~~~~ ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:68:74: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                         ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:68:105: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::read(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                        ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:75: [0m[0;1;35mwarning: [0m[1munused parameter 'time' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                          ^
+[0m[1m/home/dragonblade316/Programming/robotics/dummy/dummy_hardware/src/robot.cpp:72:106: [0m[0;1;35mwarning: [0m[1munused parameter 'period' [-Wunused-parameter][0m
+hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, const rclcpp::Duration & period) {
+[0;1;32m                                                                                                         ^
+[0m4 warnings and 1 error generated.
+gmake[2]: *** [CMakeFiles/dummy_hardware.dir/build.make:76: CMakeFiles/dummy_hardware.dir/src/robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dummy_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

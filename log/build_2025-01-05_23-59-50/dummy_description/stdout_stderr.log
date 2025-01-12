@@ -1,0 +1,61 @@
+-- The C compiler identification is Clang 14.0.0
+-- The CXX compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_COMPILE_COMMANDS
+
+[0m
+-- Build files have been written to: /home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/.env
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/arm_round.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/arm_round.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/base.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/base.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/config.json
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/mg996r_v2.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/mg996r_v2.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/part_1.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/part_1.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/robot.urdf
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/seg_one.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/seg_one.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/seg_two.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/seg_two.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/wrist.part
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/model/wrist.stl
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/ament_index/resource_index/package_run_dependencies/dummy_description
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/ament_index/resource_index/parent_prefix_path/dummy_description
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/environment/path.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/environment/path.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/local_setup.bash
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/local_setup.sh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/local_setup.zsh
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/local_setup.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.dsv
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/ament_index/resource_index/packages/dummy_description
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/cmake/dummy_descriptionConfig.cmake
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/cmake/dummy_descriptionConfig-version.cmake
+-- Symlinking: /home/dragonblade316/Programming/robotics/dummy/install_clang/dummy_description/share/dummy_description/package.xml
