@@ -1,3 +1,0 @@
-[console_scripts]
-serial = dummy_serial.serial:main
-

@@ -1,1 +1,0 @@
-/home/dragonblade316/Programming/robotics/dummy/build_clang/serial/ament_cmake_core/serialConfig.cmake

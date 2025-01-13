@@ -1,9 +1,0 @@
-source;share/dummy_serial/hook/pythonpath.ps1
-source;share/dummy_serial/hook/pythonpath.dsv
-source;share/dummy_serial/hook/pythonpath.sh
-source;share/dummy_serial/hook/ament_prefix_path.ps1
-source;share/dummy_serial/hook/ament_prefix_path.dsv
-source;share/dummy_serial/hook/ament_prefix_path.sh
-source;../../build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.ps1
-source;../../build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.dsv
-source;../../build_clang/dummy_serial/share/dummy_serial/hook/pythonpath_develop.sh

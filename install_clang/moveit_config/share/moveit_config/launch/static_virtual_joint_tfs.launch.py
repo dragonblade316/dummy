@@ -1,1 +1,0 @@
-/home/dragonblade316/Programming/robotics/dummy/moveit_config/launch/static_virtual_joint_tfs.launch.py

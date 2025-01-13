@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_controller/controller" "TARGETS" "controller" "DESTINATION" "lib/dummy_controller")

@@ -1,1 +1,0 @@
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_joy_control/ament_cmake_environment_hooks/local_setup.sh

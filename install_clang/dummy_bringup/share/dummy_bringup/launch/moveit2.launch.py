@@ -1,1 +1,0 @@
-/home/dragonblade316/Programming/robotics/dummy/dummy_bringup/launch/moveit2.launch.py

@@ -1,9 +1,0 @@
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/uninstall.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/dummy_description_uninstall.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/test.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/edit_cache.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/rebuild_cache.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/list_install_components.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/install.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/install/local.dir
-/home/dragonblade316/Programming/robotics/dummy/build_clang/dummy_description/CMakeFiles/install/strip.dir
