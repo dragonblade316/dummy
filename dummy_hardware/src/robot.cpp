@@ -18,7 +18,7 @@
 #include <rclcpp/rclcpp.hpp>
 
 
-#define SERIAL_PORT "/dev/ttyACM1"
+#define SERIAL_PORT "/dev/ttyACM0"
 #define BAUD 9600
 
 
