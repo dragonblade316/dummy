@@ -14,5 +14,7 @@ moveit_simple_controller_manager:
       - shoulder
       - elbow
       - wrist
+      - torso
+      - wristr
     action_ns: follow_joint_trajectory
     default: true

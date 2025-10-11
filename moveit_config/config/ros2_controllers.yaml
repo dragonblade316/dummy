@@ -16,6 +16,8 @@ main_controller:
       - shoulder
       - elbow
       - wrist
+      - wristr
+      - torso
     command_interfaces:
       - position
     state_interfaces:

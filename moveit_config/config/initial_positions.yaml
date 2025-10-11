@@ -3,4 +3,6 @@
 initial_positions:
   elbow: 0.0
   shoulder: 0.0
+  torso: 0.0
   wrist: 0.0
+  wristr: 0.0

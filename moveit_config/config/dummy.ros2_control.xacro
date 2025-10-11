@@ -7,8 +7,14 @@
             <hardware>
                 <!-- By default, set up controllers for simulation. This won't work on real hardware -->
                 <plugin>dummy_hardware/DummyHardware</plugin>
-                
+                <param name="joint_offsets">135 0 0 0 0</param>
             </hardware>
+            <joint name="torso">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['torso']}</param>
+                </state_interface>
+            </joint>
             <joint name="shoulder">
                 <command_interface name="position"/>
                 <state_interface name="position">
@@ -25,6 +31,12 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wrist']}</param>
+                </state_interface>
+            </joint>
+            <joint name="wristr">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">${initial_positions['wristr']}</param>
                 </state_interface>
             </joint>
 
