@@ -12,14 +12,22 @@
         };
       in {
         devShells.default = pkgs.mkShell {
-          name = "Example project";
+          name = "Dummy";
           packages = [
             pkgs.colcon
+            pkgs.gnumake
+            pkgs.cmake
             # ... other non-ROS packages
-            (with pkgs.rosPackages.humble; buildEnv {
+            (with pkgs.rosPackages.jazzy; buildEnv {
               paths = [
                 ros-core
-		moveit2
+                ros-base
+                ament-cmake-core
+                desktop
+                # ros-workspace
+                # rclcpp
+		moveit
+                hardware-interface
                 # ... other ROS packages
               ];
             })
