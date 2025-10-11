@@ -125,7 +125,7 @@ void parse(char * data) {
 }
 
 uint16_t angle_to_pulse(double angle) {
-  //slope derived from (x * (max-min)) / 100. Division is borked on this board for some reason.
+  //slope derived from (x * (max-min)) / 100. Division is borked on this board for some reason
   uint32_t val = round(angle * 2.166)+100;
   if (val > 490) val = 490;
   if (val < 0) val = 0;
