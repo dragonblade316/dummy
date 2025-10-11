@@ -44,9 +44,10 @@ public:
   }
 
 private:
-  std::vector<double> cmd_joints = {0,0,0};
-  std::vector<double> cmd_joints_cache = {0,0,0};
-  std::vector<double> state_joints = {0,0,0};
+  std::vector<double> cmd_joints = {0,0,0,0,0};
+  std::vector<double> cmd_joints_cache = {0,0,0,0,0};
+  std::vector<double> state_joints = {0,0,0,0,0};
+  std::vector<double> joint_offsets;
   std::chrono::milliseconds last_message;
 
   serialib serial;

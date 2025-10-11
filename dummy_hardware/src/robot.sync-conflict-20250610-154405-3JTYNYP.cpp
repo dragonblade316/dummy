@@ -129,8 +129,6 @@ hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, 
 
 	std::stringstream ss;
 	/*ss << "<" << cmd_joints.at(0) * RAD_TO_DEGREE << "," << cmd_joints.at(1) * RAD_TO_DEGREE << "," << cmd_joints.at(2) * RAD_TO_DEGREE << cmd_joints.at(3) * RAD_TO_DEGREE << cmd_joints.at(4) * RAD_TO_DEGREE<< ">";*/
-
-	RCLCPP_INFO(get_logger(), "Joint len: %i", cmd_joints.size());
 	
 	ss << "<";
 	for (unsigned long i = 0; i < cmd_joints.size(); i++) {
@@ -143,12 +141,9 @@ hardware_interface::return_type DummyHardware::write(const rclcpp::Time & time, 
 			offset = 0;
 		};
 
-		/*RCLCPP_INFO(get_logger(), "Adding dimension: %i", i);*/
-
-
 		ss << (cmd_joints.at(i) * RAD_TO_DEGREE) + offset;
 
-		/*i++;*/
+		i++;
 		if (i < cmd_joints.size()) ss << ",";
 	}
 	ss << ">";
