@@ -28,6 +28,7 @@ void setup() {
   Serial.begin(115200);
   //Serial.begin(9600);
   Serial.println("started");
+  pinMode(LED_BUILTIN, OUTPUT);
 
 
   // put your setup code here, to run once:
@@ -103,7 +104,7 @@ void parse(char * data) {
    char * strtokIndx;
 
   //Serial.println(data);
-
+  digitalWrite(LED_BUILTIN, HIGH);
   strtokIndx = strtok(data,",");      // get the first part - the string
   strcpy(data, strtokIndx); // copy it to messageFromPC
  
@@ -120,6 +121,7 @@ void parse(char * data) {
 
   strtokIndx = strtok(NULL, ","); 
   wristr = atof(strtokIndx);     // convert this part to a float
+  digitalWrite(LED_BUILTIN, LOW);
 
   //Serial.println(torso);
 }

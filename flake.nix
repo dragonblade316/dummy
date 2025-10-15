@@ -17,17 +17,22 @@
             pkgs.colcon
             pkgs.gnumake
             pkgs.cmake
+            pkgs.arduino-ide
             # ... other non-ROS packages
             (with pkgs.rosPackages.jazzy; buildEnv {
               paths = [
                 ros-core
                 ros-base
+                ros2-control
                 ament-cmake-core
                 desktop
                 # ros-workspace
                 # rclcpp
 		moveit
                 hardware-interface
+                joint-state-broadcaster
+                controller-manager
+                joint-trajectory-controller
                 # ... other ROS packages
               ];
             })

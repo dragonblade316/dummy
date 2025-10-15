@@ -26,6 +26,7 @@ def generate_launch_description():
         .planning_scene_monitor(
             publish_robot_description=True, publish_robot_description_semantic=True
         )
+        .joint_limits(file_path="config/joint_limits.yaml")
         #.planning_pipelines(
         #     pipelines=["ompl", "stomp", "pilz_industrial_motion_planner"]
         # )
